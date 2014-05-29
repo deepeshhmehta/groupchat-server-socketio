@@ -1,7 +1,7 @@
 window.onload = function() {
  
     var messages = [];
-    var socket = io.connect('http://localhost:3070');
+    var socket = io.connect('http://localhost:3070');//replace "localhost" with ip of the computer you chose as server
     var field = document.getElementById("field");
     var sendButton = document.getElementById("send");
     var content = document.getElementById("content");
