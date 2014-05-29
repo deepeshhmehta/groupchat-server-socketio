@@ -1,0 +1,33 @@
+<head>
+    <title>Novanet Chatzone</title>
+    <script src='/chat.js'></script>
+    <script src='/jquery-1.11.0.js'></script>
+    <script src='/socket.io/socket.io.js'></script>
+    <link rel="stylesheet" src='./pagestyle.css'>
+</head>
+    <body>
+    <div id="container">
+        <div id="content" style='float:left;width: 500px; height: 300px; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll; background-color:#5ca028;'></div> 
+        <div id="PrivateChat" style=' float:left;margin-left:10px;border:1px solid; height:300px ; width:400px;'>
+            <h3> <marquee>For Private Chat</marquee></h3>
+            <table align=center  border=1px>
+                <tr>
+                    <td style=" text-align:center;font-size:16px;">Name Of Counter Chatter</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td style="text-align:center" colspan=2><input type="submit" value="Go!" id="Chat"></td>
+                </tr>
+            </table>    
+        </div>
+    </div>      	
+            
+    
+    <div id="controls" style="clear:both;">
+        <span id="nameO" style='clear:both;'> Name: </span> 
+        <input type="text" id="name" style='width:350px;'></input>
+        <br>
+        <br>
+        <input type="text" id="field" style='width:200px;margin-left:9%;'></input>
+        <input type="button" id="send" style='margin-left:1%;color:#000000; border:1px solid #3cff00;' value='send'></input>
+    </div>

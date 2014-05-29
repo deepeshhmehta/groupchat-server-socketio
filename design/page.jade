@@ -1,0 +1,28 @@
+head
+    title Novanet-Chatzone
+    
+    script(src='/chat.js')
+    script(src='/jquery-1.11.0.js')
+    script(src='/socket.io/socket.io.js')
+
+  body
+    #container
+      #content(style='float: left; width: 500px; height: 300px; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll; background-color: #5ca028;')
+      #PrivateChat(style='float: left; margin-left: 10px; border: 1px solid; height: 300px; width: 400px;')
+        h3
+          marquee For Private Chat
+        table(align='center', border='1px')
+          tr
+            td(style='text-align: center; font-size: 16px;') Name Of Counter Chatter
+            td
+              input(type='text', name='targetName' id='targetName')
+          tr
+            td(style='text-align: center;', colspan='2')
+              input#Chat(type='button', value='Go!')
+    #controls(style='clear: both;')
+      span#nameO(style='clear: both;')  Name: 
+      input#name(type='text', style='width: 350px;')
+      br
+      br
+      input#field(type='text', style='width: 200px; margin-left: 9%;')
+      input#send(type='button', style='margin-left: 1%; color: #000000; border: 1px solid #3cff00;', value='send')
